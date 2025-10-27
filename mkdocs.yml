@@ -27,6 +27,10 @@ nav:
         - Aperçu: composants/mpu6050/index.md
         - Tuto 1: composants/mpu6050/tuto-1-debuter.md
         - Tuto 2: composants/mpu6050/tuto-2-approfondir.md
+    - Heltec WiFi LoRa 32 (V3):
+        - Aperçu: composants/heltec_wifi_lora_32_v3/index.md
+        - Tuto 1 (Meshtastic): composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md
+        - Tuto 2 (LoRa sans Meshtastic): composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
   - Contribuer: contribute.md
 
 markdown_extensions:
