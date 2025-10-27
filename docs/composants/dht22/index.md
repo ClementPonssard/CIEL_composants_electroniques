@@ -1,0 +1,1 @@
+{% include-markdown "../../../composants/dht22/README.md" %}

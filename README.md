@@ -4,14 +4,14 @@ Monorepo pédagogique : tutoriels et exemples **Arduino Uno** (PlatformIO) pour 
 Le site est publié via **MkDocs Material** ici https://clementponssard.github.io/CIEL_composants_electroniques
 
 ## Démarrer
-1. **Installer PlatformIO** (VS Code ou `pipx install platformio`).
+1. **Installer PlatformIO** (VS Code ou `pip install platformio`).
 2. Cloner le dépôt puis tester un exemple :
    ```bash
    pio run -d composants/dht22/code/example_minimal && pio run -d components/dht22/code/example_minimal -t upload
    ```
 3. Lancer la doc en local :
    ```bash
-   pip install mkdocs-material
+   pip install mkdocs-material mkdocs-include-markdown-plugin
    mkdocs serve
    ```
 
