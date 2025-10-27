@@ -1,1 +1,1 @@
-{% include-markdown "../../../composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md" %}
+{% include-markdown "../../composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md" rewrite_relative_urls=false %}

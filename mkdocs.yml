@@ -1,47 +1,47 @@
 site_name: Catalogue composants BP/BTS CIEL
 site_description: Tutos et exemples Arduino (PlatformIO) pour composants électroniques
-
 theme:
   name: material
   features:
-    - navigation.sections
-    - navigation.expand
-    - content.code.copy
-
+  - navigation.sections
+  - navigation.expand
+  - content.code.copy
 plugins:
-  - search
-  - include-markdown:
-      rewrite_relative_urls: false
-
+- search
+- include-markdown:
+    rewrite_relative_urls: false
 repo_url: https://github.com/clementponssard/CIEL_composants_electroniques
 repo_name: CIEL_composants_electroniques
-
 nav:
-  - Accueil: index.md
-  - Parcours:
-    - Bac Pro: parcours/bacpro.md
-    - BTS: parcours/bts.md
-  - Composants:
-    - DHT22: composants/dht22/index.md
-    - MPU6050:
-        - Aperçu: composants/mpu6050/index.md
-        - Tuto 1: composants/mpu6050/tuto-1-debuter.md
-        - Tuto 2: composants/mpu6050/tuto-2-approfondir.md
-    - Heltec WiFi LoRa 32 (V3):
-        - Aperçu: composants/heltec_wifi_lora_32_v3/index.md
-        - Tuto 1 (Meshtastic): composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md
-        - Tuto 2 (LoRa sans Meshtastic): composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
-  - Contribuer: contribute.md
-
+- Accueil: index.md
+- Parcours:
+  - Bac Pro: parcours/bacpro.md
+  - BTS: parcours/bts.md
+- Composants:
+  - Dht22:
+    - Readme: composants/dht22/README.md
+    - References: composants/dht22/references.md
+    - Tuto 1 debuter: composants/dht22/tuto-1-debuter.md
+    - Tuto 2 approfondir: composants/dht22/tuto-2-approfondir.md
+  - Heltec wifi lora 32 v3:
+    - Readme: composants/heltec_wifi_lora_32_v3/README.md
+    - Tuto 1 meshtastic: composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md
+    - Tuto 2 lora sans meshtastic: composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
+  - Mpu6050:
+    - Readme: composants/mpu6050/README.md
+    - References: composants/mpu6050/references.md
+    - Tuto 1 debuter: composants/mpu6050/tuto-1-debuter.md
+    - Tuto 2 approfondir: composants/mpu6050/tuto-2-approfondir.md
+- Contribuer: contribute.md
 markdown_extensions:
-  - admonition
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - tables
-  - toc:
-      permalink: true
-      toc_depth: 2
+- admonition
+- pymdownx.highlight
+- pymdownx.superfences
+- tables
+- toc:
+    permalink: true
+    toc_depth: 2
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/clementponssard/CIEL_composants_electroniques
+  - icon: fontawesome/brands/github
+    link: https://github.com/clementponssard/CIEL_composants_electroniques
