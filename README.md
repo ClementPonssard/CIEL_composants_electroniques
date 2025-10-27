@@ -1,7 +1,7 @@
 # Catalogue composants — CIEL (Arduino + PlatformIO)
 
 Monorepo pédagogique : tutoriels et exemples **Arduino Uno** (PlatformIO) pour composants électroniques courants.
-Le site est publié via **MkDocs Material**.
+Le site est publié via **MkDocs Material** ici https://clementponssard.github.io/CIEL_composants_electroniques
 
 ## Démarrer
 1. **Installer PlatformIO** (VS Code ou `pipx install platformio`).
@@ -11,7 +11,7 @@ Le site est publié via **MkDocs Material**.
    ```
 3. Lancer la doc en local :
    ```bash
-   pipx install mkdocs-material
+   pip install mkdocs-material
    mkdocs serve
    ```
 
