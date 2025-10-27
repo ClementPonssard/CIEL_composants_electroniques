@@ -1,0 +1,31 @@
+site_name: Catalogue composants BP/BTS CIEL
+site_description: Tutos et exemples Arduino (PlatformIO) pour composants électroniques
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+repo_url: https://github.com/clementponssard/CIEL_composants_electroniques
+repo_name: CIEL_composants_electroniques
+nav:
+  - Accueil: docs/index.md
+  - Parcours:
+    - Bac Pro: docs/parcours/bacpro.md
+    - BTS: docs/parcours/bts.md
+  - Composants:
+    - DHT22: composants/dht22/README.md
+    - MPU6050: composants/mpu6050/README.md
+  - Contribuer: docs/contribute.md
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 2
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/clementponssard/CIEL_composants_electroniques

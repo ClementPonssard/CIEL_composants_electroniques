@@ -1,0 +1,22 @@
+name: CI (build examples)
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - components/dht22/code/example_minimal
+          - components/mpu6050/code/example_minimal
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install PlatformIO
+        run: pip install platformio
+      - name: Build
+        run: pio run -d ${{ matrix.example }}
