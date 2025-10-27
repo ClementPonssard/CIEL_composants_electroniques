@@ -21,18 +21,11 @@ jobs:
       - name: Install MkDocs and plugins
         run: pip install mkdocs-material mkdocs-include-markdown-plugin
 
+      - name: Sync docs from composants
+        run: python synchro_docs.py
+
       - name: Build site
         run: mkdocs build
-
-      - name: Copy component images into site
-        shell: bash
-        run: |
-          shopt -s globstar nullglob
-          for p in composants/**/images/*; do
-            [ -f "$p" ] || continue
-            mkdir -p "site/$(dirname "$p")"
-            cp "$p" "site/$p"
-          done
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
