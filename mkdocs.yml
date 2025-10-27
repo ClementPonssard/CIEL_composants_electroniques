@@ -4,7 +4,6 @@ theme:
   name: material
   features:
   - navigation.sections
-  - navigation.expand
   - content.code.copy
 plugins:
 - search
@@ -18,20 +17,20 @@ nav:
   - Bac Pro: parcours/bacpro.md
   - BTS: parcours/bts.md
 - Composants:
-  - Dht22:
-    - Readme: composants/dht22/README.md
-    - References: composants/dht22/references.md
-    - Tuto 1 debuter: composants/dht22/tuto-1-debuter.md
-    - Tuto 2 approfondir: composants/dht22/tuto-2-approfondir.md
-  - Heltec wifi lora 32 v3:
-    - Readme: composants/heltec_wifi_lora_32_v3/README.md
-    - Tuto 1 meshtastic: composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md
-    - Tuto 2 lora sans meshtastic: composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
-  - Mpu6050:
-    - Readme: composants/mpu6050/README.md
-    - References: composants/mpu6050/references.md
-    - Tuto 1 debuter: composants/mpu6050/tuto-1-debuter.md
-    - Tuto 2 approfondir: composants/mpu6050/tuto-2-approfondir.md
+  - dht22:
+    - Présentation: composants/dht22/index.md
+    - Références DHT22: composants/dht22/references.md
+    - 'DHT22 — Tuto 1 : prise en main': composants/dht22/tuto-1-debuter.md
+    - 'DHT22 — Tuto 2 : approfondir': composants/dht22/tuto-2-approfondir.md
+  - heltec wifi lora 32 v3:
+    - Présentation: composants/heltec_wifi_lora_32_v3/index.md
+    - Tuto 1 — Découverte et utilisation de Meshtastic: composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md
+    - Tuto 2 — Communication LoRa point-à-point sans Meshtastic: composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
+  - mpu6050:
+    - Présentation: composants/mpu6050/index.md
+    - Références MPU6050: composants/mpu6050/references.md
+    - 'MPU6050 — Tuto 1 : prise en main': composants/mpu6050/tuto-1-debuter.md
+    - 'MPU6050 — Tuto 2 : approfondir': composants/mpu6050/tuto-2-approfondir.md
 - Contribuer: contribute.md
 markdown_extensions:
 - admonition
