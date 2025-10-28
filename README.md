@@ -27,6 +27,9 @@ templates/ -> gabarits
 .github/workflows -> CI + Pages
 ```
 
-## Licences
-- **Code** : MIT (voir `LICENSE`)
-- **Docs/Images** : CC BY-SA 4.0
+## 🧾 Licence
+- **Code source** : [CeCILL-B](https://cecill.info/licences/Licence_CeCILL-B_V1-fr.html)  
+- **Documentation et tutoriels** : [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+  
+Ces licences permettent la libre réutilisation à des fins **éducatives et non commerciales**, tout en garantissant la **paternité des auteurs**.
+

@@ -1,0 +1,10 @@
+Licence CECILL-B
+
+Ce logiciel est régi par la licence CeCILL-B soumise au droit français
+et respectant les principes de diffusion des logiciels libres.
+Vous pouvez utiliser, modifier et/ou redistribuer ce programme
+sous les conditions de la licence CeCILL-B telle que diffusée par
+le CEA, le CNRS et l'INRIA à l’adresse suivante :
+https://cecill.info/licences/Licence_CeCILL-B_V1-fr.html
+
+L’auteur du code original est Clément Ponssard, 2025.
