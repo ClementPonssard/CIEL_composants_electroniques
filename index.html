@@ -808,6 +808,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MiseEnPage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mise en page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -855,142 +877,6 @@
 <li>Parcourez <em>Parcours</em> pour des sélections par niveau.</li>
 </ul>
 </div>
-<h1 id="catalogue-composants-ciel-exemples-de-mise-en-page">Catalogue composants CIEL — Exemples de mise en page<a class="headerlink" href="#catalogue-composants-ciel-exemples-de-mise-en-page" title="Permanent link">&para;</a></h1>
-<p>Bienvenue sur ce site de démonstration !<br />
-Ce document illustre les <strong>possibilités offertes par MkDocs Material</strong> sur GitHub Pages, utilisées pour présenter les tutoriels et exemples Arduino / PlatformIO du BTS et Bac Pro CIEL.</p>
-<hr />
-<h2 id="introduction">🧭 Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">À propos</p>
-<p>MkDocs Material permet d’écrire des documents clairs, illustrés, et interactifs — parfaits pour documenter vos projets techniques, TP ou exemples Arduino.</p>
-</div>
-<hr />
-<h2 id="titres-texte-et-listes">🧱 Titres, texte et listes<a class="headerlink" href="#titres-texte-et-listes" title="Permanent link">&para;</a></h2>
-<h3 id="niveaux-de-titre">Niveaux de titre<a class="headerlink" href="#niveaux-de-titre" title="Permanent link">&para;</a></h3>
-<h4 id="sous-titre-de-niveau-4">Sous-titre de niveau 4<a class="headerlink" href="#sous-titre-de-niveau-4" title="Permanent link">&para;</a></h4>
-<h5 id="sous-titre-de-niveau-5">Sous-titre de niveau 5<a class="headerlink" href="#sous-titre-de-niveau-5" title="Permanent link">&para;</a></h5>
-<h6 id="sous-titre-de-niveau-6">Sous-titre de niveau 6<a class="headerlink" href="#sous-titre-de-niveau-6" title="Permanent link">&para;</a></h6>
-<h3 id="mise-en-forme">Mise en forme<a class="headerlink" href="#mise-en-forme" title="Permanent link">&para;</a></h3>
-<p>Vous pouvez combiner :</p>
-<ul>
-<li><strong>Gras</strong></li>
-<li><em>Italique</em></li>
-<li><code>Monospace</code></li>
-<li>==Surligné==</li>
-<li>~~Barré~~  </li>
-<li>Et même <span style="color:#27ae60; font-weight:bold;">du texte coloré</span> avec du HTML.</li>
-</ul>
-<h3 id="listes">Listes<a class="headerlink" href="#listes" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Liste non ordonnée</li>
-<li>sous-élément</li>
-<li>[x] Liste à cases cochées</li>
-<li>
-<p>[ ] Élément non coché</p>
-</li>
-<li>
-<p>Liste ordonnée</p>
-</li>
-<li>Deuxième point</li>
-<li>Sous-élément numéroté</li>
-</ul>
-<hr />
-<h2 id="admonitions">⚙️ Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Astuce</p>
-<p>Définissez vos admonitions avec <code>!!! tip</code>, <code>!!! warning</code>, <code>!!! note</code>, etc.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Attention</p>
-<p>Débranchez toujours <strong>l’alimentation</strong> avant de connecter ou déconnecter une antenne.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Exemple</p>
-<div class="highlight"><pre><span></span><code><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
-<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
-<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-</code></pre></div>
-</div>
-<hr />
-<h2 id="code-et-onglets">🧰 Code et onglets<a class="headerlink" href="#code-et-onglets" title="Permanent link">&para;</a></h2>
-<p>=== "Arduino IDE"
-    <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Exemple Arduino IDE&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></p>
-<p>=== "PlatformIO"
-    <div class="highlight"><pre><span></span><code><span class="k">[env:uno]</span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
-<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span>
-</code></pre></div></p>
-<hr />
-<h2 id="images-et-figures">🖼️ Images et figures<a class="headerlink" href="#images-et-figures" title="Permanent link">&para;</a></h2>
-<p><img alt="Arduino Uno" src="images/arduino_uno.png" />{ width="300" }</p>
-<p><em>Caption : Arduino Uno R3 — carte de référence utilisée pour les TP.</em></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Les images peuvent être placées dans un sous-répertoire <code>images/</code> du composant ou du tutoriel.</p>
-</div>
-<hr />
-<h2 id="tableaux-et-couleurs">📊 Tableaux et couleurs<a class="headerlink" href="#tableaux-et-couleurs" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Capteur</th>
-<th style="text-align: left;">Fonction principale</th>
-<th style="text-align: left;">Niveau</th>
-<th style="text-align: center;">Statut</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">DHT22</td>
-<td style="text-align: left;">Température / humidité</td>
-<td style="text-align: left;">Bac Pro</td>
-<td style="text-align: center;">✅</td>
-</tr>
-<tr>
-<td style="text-align: left;">MPU6050</td>
-<td style="text-align: left;">Accéléromètre / gyroscope</td>
-<td style="text-align: left;">BTS 1re année</td>
-<td style="text-align: center;">⚙️</td>
-</tr>
-<tr>
-<td style="text-align: left;">Heltec LoRa 32 V3</td>
-<td style="text-align: left;">Communication longue portée</td>
-<td style="text-align: left;">BTS 2e année</td>
-<td style="text-align: center;">🚧</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="mathematiques">🧮 Mathématiques<a class="headerlink" href="#mathematiques" title="Permanent link">&para;</a></h2>
-<p>Les équations peuvent être rendues avec LaTeX :</p>
-<p>$$
-V = R \times I
-$$</p>
-<p>et aussi en ligne : $f(x) = x^2 + 2x + 1$.</p>
-<hr />
-<h2 id="diagramme-mermaid">📈 Diagramme Mermaid<a class="headerlink" href="#diagramme-mermaid" title="Permanent link">&para;</a></h2>
-<p>Un diagramme de communication typique :</p>
-<p>```mermaid
-sequenceDiagram
-  participant Capteur as Capteur DHT22
-  participant MCU as Arduino UNO
-  participant PC as PC / IDE
-  Capteur-&gt;&gt;MCU: Mesure température
-  MCU--&gt;&gt;Capteur: Requête toutes les 2s
-  MCU-&gt;&gt;PC: Affiche les données série</p>
 
 
 
@@ -1059,6 +945,10 @@ sequenceDiagram
     
     
       <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
