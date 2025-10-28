@@ -32,11 +32,16 @@ nav:
     - 'MPU6050 — Tuto 1 : prise en main': composants/mpu6050/tuto-1-debuter.md
     - 'MPU6050 — Tuto 2 : approfondir': composants/mpu6050/tuto-2-approfondir.md
 - Contribuer: contribute.md
+- Mise en page : MiseEnPage.md
 markdown_extensions:
 - admonition
-- pymdownx.highlight
-- pymdownx.superfences
 - tables
+- footnotes
+- def_list
+- pymdownx.superfences
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.highlight
 - toc:
     permalink: true
     toc_depth: 2
@@ -44,3 +49,6 @@ extra:
   social:
   - icon: fontawesome/brands/github
     link: https://github.com/clementponssard/CIEL_composants_electroniques
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
