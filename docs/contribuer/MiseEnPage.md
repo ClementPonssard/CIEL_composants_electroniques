@@ -36,14 +36,16 @@ Vous pouvez combiner :
 ### Listes
 
 - Liste non ordonnée
-  - Sous-liste
+    - Sous-liste
 - [x] Liste à cases cochées
 - [ ] Élément non coché
 
-Il n'est pas possible en MkDocs de mélanger plusieurs niveaux de liste.
-Il n'est pas non plus possible d'intégrer des listes ordonées à des non ordonées (ou inversement).
+
+Les listes ordonées sont possibles aussi .
 
 1. Liste ordonnée
+       1. Premièrement
+       2. Deuxièmement
 2. Deuxième point
 
 ---
@@ -62,6 +64,19 @@ Il n'est pas non plus possible d'intégrer des listes ordonées à des non ordon
     delay(1000);
     digitalWrite(LED_BUILTIN, LOW);
     delay(1000);
+    ```
+
+!!! note "Note"
+    Première ligne de la note.
+
+    Second paragraphe avec **gras** et liste :
+
+    - item 1
+    - item 2
+        - sous-item
+
+    ```python
+    print("code dans la note")
     ```
 
 ---
@@ -98,12 +113,19 @@ Il n'est pas non plus possible d'intégrer des listes ordonées à des non ordon
 
 ## 🖼️ Images et figures
 
-![Arduino Uno](images/Pinout-arduino-uno-r3.jpg) { width="300" }
-
-_Caption : Arduino Uno R3 — carte de référence utilisée pour les TP._
+![Arduino Uno](../images/Pinout-arduino-uno-r3.jpg){ width="500" .center}
+*Arduino Uno R3 — carte de référence utilisée pour les TP.* 
+{: .center }
 
 !!! note
     Les images peuvent être placées dans un sous-répertoire `images/` du composant ou du tutoriel.
+
+
+Version structurée avec légende (attention, le chemin est à rentrer à la main (voir code source))
+<figure class="center">
+  <img src="../../images/Pinout-arduino-uno-r3.jpg" alt="Arduino Uno" width="100">
+  <figcaption>Arduino Uno R3 — carte de référence utilisée pour les TP.</figcaption>
+</figure>
 
 ---
 
@@ -122,8 +144,34 @@ _Caption : Arduino Uno R3 — carte de référence utilisée pour les TP._
 Les équations peuvent être rendues avec LaTeX :
 
 $$
-V = R \times I
+U = R \times I
 $$
 
-et aussi en ligne : $f(x) = x^2 + 2x + 1$.
+et aussi en ligne :  $f(x) = x^2 + 2x + 1$.
 
+
+---
+
+## 📈 Diagramme Mermaid
+
+Un diagramme de communication typique :
+
+```mermaid
+sequenceDiagram
+  participant Capteur as Capteur DHT22
+  participant MCU as Arduino UNO
+  participant PC as PC / IDE
+  Capteur->>MCU: Mesure température
+  MCU-->>Capteur: Requête toutes les 2s
+  MCU->>PC: Affiche les données série
+```
+
+## Et enfin un exemple de lien interne et externe
+
+Voici un lien interne [Mise en page](./MiseEnPage.md), un lien externe [Documentation Arduino](https://www.arduino.cc/) et une ancre [Aller aux images](#images-et-figures).
+
+```markdown
+Voici un lien interne [Mise en page](./MiseEnPage.md),
+un lien externe [Documentation Arduino](https://www.arduino.cc/),
+et une ancre [Aller aux images](#images-et-figures)
+```

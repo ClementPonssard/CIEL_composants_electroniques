@@ -5,6 +5,9 @@ theme:
   features:
   - navigation.sections
   - content.code.copy
+  - content.math
+  - content.code.annotate
+  - diagrams
 plugins:
 - search
 - include-markdown:
@@ -18,22 +21,26 @@ nav:
   - BTS: parcours/bts.md
 - Composants:
   - dht22:
-    - Présentation: composants/dht22/index.md
+    - Presentation: composants/dht22/index.md
     - Références DHT22: composants/dht22/references.md
     - 'DHT22 — Tuto 1 : prise en main': composants/dht22/tuto-1-debuter.md
     - 'DHT22 — Tuto 2 : approfondir': composants/dht22/tuto-2-approfondir.md
   - heltec wifi lora 32 v3:
-    - Présentation: composants/heltec_wifi_lora_32_v3/index.md
+    - Presentation: composants/heltec_wifi_lora_32_v3/index.md
     - Tuto 1 — Découverte et utilisation de Meshtastic: composants/heltec_wifi_lora_32_v3/tuto-1-meshtastic.md
     - Tuto 2 — Communication LoRa point-à-point sans Meshtastic: composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
   - mpu6050:
-    - Présentation: composants/mpu6050/index.md
+    - Presentation: composants/mpu6050/index.md
     - Références MPU6050: composants/mpu6050/references.md
     - 'MPU6050 — Tuto 1 : prise en main': composants/mpu6050/tuto-1-debuter.md
     - 'MPU6050 — Tuto 2 : approfondir': composants/mpu6050/tuto-2-approfondir.md
-- Contribuer: contribute.md
-- Mise en page : MiseEnPage.md
+- Contribuer:
+  - Comment Faire: contribuer/contribute.md
+  - Mise en page: contribuer/MiseEnPage.md
+- Compiler les exemples: CompilerProjet.md
 markdown_extensions:
+- md_in_html
+- attr_list
 - admonition
 - tables
 - footnotes
@@ -42,6 +49,8 @@ markdown_extensions:
 - pymdownx.tasklist:
     custom_checkbox: true
 - pymdownx.highlight
+- pymdownx.arithmatex:
+    generic: true
 - toc:
     permalink: true
     toc_depth: 2
@@ -50,5 +59,8 @@ extra:
   - icon: fontawesome/brands/github
     link: https://github.com/clementponssard/CIEL_composants_electroniques
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+extra_css:
+- stylesheets/extra.css

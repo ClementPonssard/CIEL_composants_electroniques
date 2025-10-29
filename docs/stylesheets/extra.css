@@ -1,0 +1,27 @@
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+
+figure.center {
+  text-align: center;
+  margin: 1em auto;
+}
+
+figure.center img {
+  display: block;
+  margin: 0 auto;
+}
+
+figure.center figcaption {
+  margin-top: 0.3em;
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+  font-size: 0.9em;
+}
