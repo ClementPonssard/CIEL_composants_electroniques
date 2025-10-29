@@ -1076,7 +1076,6 @@
 <h1 id="comment-compiler-les-exemples-fournis-dans-ce-depot">🧰 Comment compiler les exemples fournis dans ce dépôt<a class="headerlink" href="#comment-compiler-les-exemples-fournis-dans-ce-depot" title="Permanent link">&para;</a></h1>
 <p>Ce dépôt contient différents <strong>tutoriels et exemples de code</strong> associés aux composants électroniques utilisés en Bac Pro et BTS CIEL.<br />
 Chaque composant possède un ou plusieurs exemples de programmes prêts à être compilés avec <strong>Arduino IDE</strong> ou <strong>PlatformIO (PIO)</strong>.</p>
-<hr />
 <h2 id="ou-trouver-les-exemples">📂 Où trouver les exemples<a class="headerlink" href="#ou-trouver-les-exemples" title="Permanent link">&para;</a></h2>
 <p>Les exemples sont rangés dans le dossier :</p>
 <div class="highlight"><pre><span></span><code>composants/Nom_composant/code/
@@ -1089,7 +1088,6 @@ Chaque composant possède un ou plusieurs exemples de programmes prêts à être
   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;ton-repo&gt;.git
 </code></pre></div>
 - soit <strong>récupérer uniquement le dossier</strong> du composant qui t’intéresse.</p>
-<hr />
 <h2 id="option-1-compilation-via-lide-arduino">⚙️ Option 1 : Compilation via l’IDE Arduino<a class="headerlink" href="#option-1-compilation-via-lide-arduino" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Ouvre le fichier <code>.ino</code> correspondant à l’exemple.  </li>
@@ -1103,7 +1101,6 @@ Chaque composant possède un ou plusieurs exemples de programmes prêts à être
 <blockquote>
 <p>💡 Si l’exemple ne compile pas, vérifie la version des librairies et la carte sélectionnée.</p>
 </blockquote>
-<hr />
 <h2 id="option-2-compilation-avec-platformio-pio">🧑‍💻 Option 2 : Compilation avec PlatformIO (PIO)<a class="headerlink" href="#option-2-compilation-avec-platformio-pio" title="Permanent link">&para;</a></h2>
 <h3 id="1-installer-platformio">1. Installer PlatformIO<a class="headerlink" href="#1-installer-platformio" title="Permanent link">&para;</a></h3>
 <p>Tu peux l’utiliser :
@@ -1111,12 +1108,10 @@ Chaque composant possède un ou plusieurs exemples de programmes prêts à être
 - soit en <strong>ligne de commande</strong> (Linux/macOS/Windows) :
   <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>platformio
 </code></pre></div></p>
-<hr />
 <h3 id="2-cloner-le-depot">2. Cloner le dépôt<a class="headerlink" href="#2-cloner-le-depot" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;ton-repo&gt;.git
 <span class="nb">cd</span><span class="w"> </span>&lt;ton-repo&gt;
 </code></pre></div>
-<hr />
 <h3 id="3-compiler-un-exemple">3. Compiler un exemple<a class="headerlink" href="#3-compiler-un-exemple" title="Permanent link">&para;</a></h3>
 <p>Utilise la commande suivante pour compiler un exemple :</p>
 <div class="highlight"><pre><span></span><code>pio<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>composants/heltec_wifi_lora_32_v3/code/LoRaSender
@@ -1124,7 +1119,6 @@ Chaque composant possède un ou plusieurs exemples de programmes prêts à être
 <blockquote>
 <p>L’option <code>-d</code> indique à PlatformIO le dossier du projet à compiler.</p>
 </blockquote>
-<hr />
 <h3 id="4-compiler-et-televerser-sur-la-carte">4. Compiler et téléverser sur la carte<a class="headerlink" href="#4-compiler-et-televerser-sur-la-carte" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>pio<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>composants/heltec_wifi_lora_32_v3/code/LoRaSender<span class="w"> </span>-t<span class="w"> </span>upload
 </code></pre></div>
@@ -1134,17 +1128,14 @@ Si besoin, configure le bon port série dans le fichier <code>platformio.ini</co
 <div class="highlight"><pre><span></span><code><span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/dev/ttyUSB0</span>
 </code></pre></div></p>
 </blockquote>
-<hr />
 <h3 id="5-ouvrir-le-moniteur-serie">5. Ouvrir le moniteur série<a class="headerlink" href="#5-ouvrir-le-moniteur-serie" title="Permanent link">&para;</a></h3>
 <p>Pour visualiser les messages envoyés par le programme :</p>
 <div class="highlight"><pre><span></span><code>pio<span class="w"> </span>device<span class="w"> </span>monitor<span class="w"> </span>-d<span class="w"> </span>composants/heltec_wifi_lora_32_v3/code/LoRaSender
 </code></pre></div>
-<hr />
 <h2 id="astuce-tester-tous-les-exemples-dun-composant">🧩 Astuce : tester tous les exemples d’un composant<a class="headerlink" href="#astuce-tester-tous-les-exemples-dun-composant" title="Permanent link">&para;</a></h2>
 <p>Tu peux rapidement tester tous les exemples d’un même composant avec :</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>d<span class="w"> </span><span class="k">in</span><span class="w"> </span>composants/heltec_wifi_lora_32_v3/code/*<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>pio<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$d</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
 </code></pre></div>
-<hr />
 <h2 id="en-resume">📘 En résumé<a class="headerlink" href="#en-resume" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1167,7 +1158,6 @@ Si besoin, configure le bon port série dans le fichier <code>platformio.ini</co
 </tr>
 </tbody>
 </table>
-<hr />
 <blockquote>
 <p>🧠 <strong>Conseil :</strong><br />
 Pour un usage régulier en Bac Pro ou BTS, <strong>PlatformIO</strong> est recommandé : il permet de versionner les projets, d’intégrer le code dans GitHub et de travailler plus efficacement en équipe.</p>

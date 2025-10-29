@@ -1080,7 +1080,6 @@
 <h1 id="contribuer-au-depot">🤝 Contribuer au dépôt<a class="headerlink" href="#contribuer-au-depot" title="Permanent link">&para;</a></h1>
 <p>Ce dépôt est collaboratif : il regroupe des <strong>tutoriels, exemples de code et fiches techniques</strong> pour les composants électroniques utilisés en Bac Pro et BTS CIEL.<br />
 Chacun peut contribuer en ajoutant un nouveau composant, en améliorant la documentation ou en partageant des exemples.</p>
-<hr />
 <h2 id="convention-de-nommage">🧩 Convention de nommage<a class="headerlink" href="#convention-de-nommage" title="Permanent link">&para;</a></h2>
 <p>Pour garder une structure claire et homogène :</p>
 <table>
@@ -1098,13 +1097,12 @@ Chacun peut contribuer en ajoutant un nouveau composant, en améliorant la docum
 <td>tout en minuscules, séparateurs <code>_</code></td>
 </tr>
 <tr>
-<td><strong>Exemples</strong></td>
-<td><code>example_minimal</code>, <code>example_i2c_advanced</code></td>
-<td>préfixe <code>example_</code>, nom explicite et concis</td>
+<td><strong>Tutoriels</strong></td>
+<td><code>tuto_minimal</code>, <code>tuto_i2c_advancé</code></td>
+<td>préfixe <code>tuto_</code>, nom explicite et concis</td>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="ajouter-un-composant">🆕 Ajouter un composant<a class="headerlink" href="#ajouter-un-composant" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
@@ -1116,7 +1114,7 @@ Chacun peut contribuer en ajoutant un nouveau composant, en améliorant la docum
 <p><strong>Compléter les fichiers Markdown</strong> :</p>
 </li>
 <li><code>README.md</code> : présentation générale du composant  </li>
-<li><code>tuto-1-*.md</code>, <code>tuto-2-*.md</code> : tutoriels pas à pas  </li>
+<li><code>tuto_1_*.md</code>, <code>tuto_2_*.md</code> : tutoriels pas à pas  </li>
 <li>
 <p><code>references.md</code> : fiches techniques, liens, documentation fabricant  </p>
 </li>
@@ -1135,13 +1133,12 @@ Chacun peut contribuer en ajoutant un nouveau composant, en améliorant la docum
 </code></pre></div></p>
 </li>
 </ol>
-<hr />
 <h2 id="structure-type-dun-composant">🗂️ Structure type d’un composant<a class="headerlink" href="#structure-type-dun-composant" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="na">composants/</span>
 <span class="na">└── heltec_wifi_lora_32_v3/</span>
 <span class="w">    </span><span class="na">├── README.md</span>
-<span class="w">    </span><span class="na">├── tuto-1-meshtastic.md</span>
-<span class="w">    </span><span class="na">├── tuto-2-lora-sans-meshtastic.md</span>
+<span class="w">    </span><span class="na">├── tuto_1_meshtastic.md</span>
+<span class="w">    </span><span class="na">├── tuto_2_lora-sans-meshtastic.md</span>
 <span class="w">    </span><span class="na">├── references.md</span>
 <span class="w">    </span><span class="na">├── code/</span>
 <span class="w">    </span><span class="na">│   ├── platformio.ini </span>
@@ -1158,7 +1155,6 @@ Chacun peut contribuer en ajoutant un nouveau composant, en améliorant la docum
 <li>Le code embarqué est idéalement conçu pour être compilé avec <strong>PlatformIO</strong>.</li>
 </ul>
 </div>
-<hr />
 <h2 id="generer-et-visualiser-la-documentation-en-local">🧱 Générer et visualiser la documentation en local<a class="headerlink" href="#generer-et-visualiser-la-documentation-en-local" title="Permanent link">&para;</a></h2>
 <h3 id="installation-des-outils">🔧 Installation des outils<a class="headerlink" href="#installation-des-outils" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Installer Python et pip</span>
@@ -1168,13 +1164,11 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <span class="c1"># Installer MkDocs et les extensions utilisées</span>
 pip3<span class="w"> </span>install<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-include-markdown-plugin<span class="w"> </span>mkdocs-exclude
 </code></pre></div>
-<hr />
 <h3 id="generation-automatique-des-pages">🪄 Génération automatique des pages<a class="headerlink" href="#generation-automatique-des-pages" title="Permanent link">&para;</a></h3>
 <p>Chaque fois que vous ajoutez un composant, exécutez :</p>
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>./synchro_docs.py
 </code></pre></div>
 <p>Cela met à jour la documentation à partir des fichiers présents dans <code>composants/</code>.</p>
-<hr />
 <h3 id="visualiser-le-site-en-local">🌐 Visualiser le site en local<a class="headerlink" href="#visualiser-le-site-en-local" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
@@ -1194,26 +1188,11 @@ pip3<span class="w"> </span>install<span class="w"> </span>mkdocs-material<span 
 Le contenu principal est généré à partir du dossier <code>composants/</code>.<br />
 Si vous travaillez sur un tutoriel, pensez à rapatrier le <code>.md</code> correspondant dans le répertoire du composant avant de lancer <code>synchro_docs.py</code>.</p>
 </div>
-<hr />
 <h2 id="licences">⚖️ Licences<a class="headerlink" href="#licences" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Licence</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>💻 <strong>Code source</strong></td>
-<td><a href="https://cecill.info/licences/Licence_CeCILL-B_V1-fr.html">CeCILL-B</a></td>
-</tr>
-<tr>
-<td>📄 <strong>Documentation &amp; images</strong></td>
-<td><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">CC BY-NC-SA 4.0</a></td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li><strong>Code source</strong> : <a href="https://cecill.info/licences/Licence_CeCILL-B_V1-fr.html">CeCILL-B</a>  </li>
+<li><strong>Documentation et tutoriels</strong> : <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a></li>
+</ul>
 <hr />
 <p>✍️ <strong>Merci à tous les contributeurs !</strong><br />
 Votre participation permet d’enrichir ce dépôt et de le rendre utile à toute la communauté CIEL.</p>
