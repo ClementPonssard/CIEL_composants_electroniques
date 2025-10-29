@@ -27,13 +27,13 @@ Le site est généré automatiquement avec **MkDocs Material**, à partir des tu
 
 Tu veux compiler un des exemples avec l'IDE Arduino ou  PlatformIO.  
 ➡️ Consulte la page :  
-[**Comment compiler les exemples**](https://clementponssard.github.io/CIEL_composants_electroniques/CompilerProjetPIO/)
+[**Comment compiler les exemples**](https://clementponssard.github.io/CIEL_composants_electroniques/CompilerProjet/)
 
 ## 🤝 Contribuer
 
 Tu veux ajouter un composant, un tutoriel ou un exemple de code ?  
 ➡️ Toutes les explications sont ici :  
-[**Guide du contributeur**](https://clementponssard.github.io/CIEL_composants_electroniques/contribute/)
+[**Guide du contributeur**](https://clementponssard.github.io/CIEL_composants_electroniques/contribuer/contribute/)
 
 ## ⚖️ Licences
 
