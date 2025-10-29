@@ -3,8 +3,6 @@
 Ce dépôt est collaboratif : il regroupe des **tutoriels, exemples de code et fiches techniques** pour les composants électroniques utilisés en Bac Pro et BTS CIEL.  
 Chacun peut contribuer en ajoutant un nouveau composant, en améliorant la documentation ou en partageant des exemples.
 
----
-
 ## 🧩 Convention de nommage
 
 Pour garder une structure claire et homogène :
@@ -12,9 +10,7 @@ Pour garder une structure claire et homogène :
 | Type | Exemple | Règle |
 |------|----------|-------|
 | **Dossier composant** | `dht22`, `mpu6050`, `heltec_wifi_lora_32_v3` | tout en minuscules, séparateurs `_` |
-| **Exemples** | `example_minimal`, `example_i2c_advanced` | préfixe `example_`, nom explicite et concis |
-
----
+| **Tutoriels** | `tuto_minimal`, `tuto_i2c_advancé` | préfixe `tuto_`, nom explicite et concis |
 
 ## 🆕 Ajouter un composant
 
@@ -25,7 +21,7 @@ Pour garder une structure claire et homogène :
 
 2. **Compléter les fichiers Markdown** :
    - `README.md` : présentation générale du composant  
-   - `tuto-1-*.md`, `tuto-2-*.md` : tutoriels pas à pas  
+   - `tuto_1_*.md`, `tuto_2_*.md` : tutoriels pas à pas  
    - `references.md` : fiches techniques, liens, documentation fabricant  
 
 3. **Créer au moins un exemple fonctionnel** dans `code/` :  
@@ -39,16 +35,14 @@ Pour garder une structure claire et homogène :
          - Heltec WiFi LoRa 32 V3: composants/heltec_wifi_lora_32_v3/README.md
    ```
 
----
-
 ## 🗂️ Structure type d’un composant
 
 ```ini
 composants/
 └── heltec_wifi_lora_32_v3/
     ├── README.md
-    ├── tuto-1-meshtastic.md
-    ├── tuto-2-lora-sans-meshtastic.md
+    ├── tuto_1_meshtastic.md
+    ├── tuto_2_lora-sans-meshtastic.md
     ├── references.md
     ├── code/
     │   ├── platformio.ini 
@@ -63,8 +57,6 @@ composants/
     - Chaque fichier `.md` à la racine du composant génère **une page HTML** dans la doc.  
     - Le code embarqué est idéalement conçu pour être compilé avec **PlatformIO**.
 
----
-
 ## 🧱 Générer et visualiser la documentation en local
 
 ### 🔧 Installation des outils
@@ -78,8 +70,6 @@ sudo apt install python3 python3-pip -y
 pip3 install mkdocs-material mkdocs-include-markdown-plugin mkdocs-exclude
 ```
 
----
-
 ### 🪄 Génération automatique des pages
 
 Chaque fois que vous ajoutez un composant, exécutez :
@@ -89,8 +79,6 @@ python ./synchro_docs.py
 ```
 
 Cela met à jour la documentation à partir des fichiers présents dans `composants/`.
-
----
 
 ### 🌐 Visualiser le site en local
 
@@ -111,14 +99,10 @@ Le site est alors accessible sur :
     Le contenu principal est généré à partir du dossier `composants/`.  
     Si vous travaillez sur un tutoriel, pensez à rapatrier le `.md` correspondant dans le répertoire du composant avant de lancer `synchro_docs.py`.
 
----
-
 ## ⚖️ Licences
 
-| Type | Licence |
-|-------|----------|
-| 💻 **Code source** | [CeCILL-B](https://cecill.info/licences/Licence_CeCILL-B_V1-fr.html) |
-| 📄 **Documentation & images** | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr) |
+- **Code source** : [CeCILL-B](https://cecill.info/licences/Licence_CeCILL-B_V1-fr.html)  
+- **Documentation et tutoriels** : [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 

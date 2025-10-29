@@ -12,8 +12,6 @@ Ce document illustre les **possibilités offertes par MkDocs Material** sur GitH
 
     La documentation est écrite au format Markdown .md dans les répertoires des composants et convertie en site web automatiquement par MkDocs pour GitHub Pages.
 
----
-
 ## 🧱 Titres, texte et listes
 
 ### Niveaux de titre
@@ -48,8 +46,6 @@ Les listes ordonées sont possibles aussi .
        2. Deuxièmement
 2. Deuxième point
 
----
-
 ## ⚙️ Admonitions
 
 !!! tip "Astuce"
@@ -79,8 +75,6 @@ Les listes ordonées sont possibles aussi .
     print("code dans la note")
     ```
 
----
-
 ## 🧰 Code et onglets
 
 === "Arduino IDE"
@@ -109,8 +103,6 @@ Les listes ordonées sont possibles aussi .
     monitor_echo = yes       ; pour voir ce que TU tapes
     ```
 
----
-
 ## 🖼️ Images et figures
 
 ![Arduino Uno](../images/Pinout-arduino-uno-r3.jpg){ width="500" .center}
@@ -127,8 +119,6 @@ Version structurée avec légende (attention, le chemin est à rentrer à la mai
   <figcaption>Arduino Uno R3 — carte de référence utilisée pour les TP.</figcaption>
 </figure>
 
----
-
 ## 📊 Tableaux et couleurs
 
 | Capteur | Fonction principale | Niveau | Statut |
@@ -136,8 +126,6 @@ Version structurée avec légende (attention, le chemin est à rentrer à la mai
 | DHT22 | Température / humidité | Bac Pro | ✅ |
 | MPU6050 | Accéléromètre / gyroscope | BTS 1re année | ⚙️ |
 | Heltec LoRa 32 V3 | Communication longue portée | BTS 2e année | 🚧 |
-
----
 
 ## 🧮 Mathématiques
 
@@ -149,8 +137,6 @@ $$
 
 et aussi en ligne :  $f(x) = x^2 + 2x + 1$.
 
-
----
 
 ## 📈 Diagramme Mermaid
 

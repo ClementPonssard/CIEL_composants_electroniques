@@ -3,8 +3,6 @@
 Ce dépôt contient différents **tutoriels et exemples de code** associés aux composants électroniques utilisés en Bac Pro et BTS CIEL.  
 Chaque composant possède un ou plusieurs exemples de programmes prêts à être compilés avec **Arduino IDE** ou **PlatformIO (PIO)**.
 
----
-
 ## 📂 Où trouver les exemples
 
 Les exemples sont rangés dans le dossier :
@@ -25,8 +23,6 @@ Tu peux soit :
   ```
 - soit **récupérer uniquement le dossier** du composant qui t’intéresse.
 
----
-
 ## ⚙️ Option 1 : Compilation via l’IDE Arduino
 
 1. Ouvre le fichier `.ino` correspondant à l’exemple.  
@@ -39,8 +35,6 @@ Tu peux soit :
 
 > 💡 Si l’exemple ne compile pas, vérifie la version des librairies et la carte sélectionnée.
 
----
-
 ## 🧑‍💻 Option 2 : Compilation avec PlatformIO (PIO)
 
 ### 1. Installer PlatformIO
@@ -52,16 +46,12 @@ Tu peux l’utiliser :
   pip install platformio
   ```
 
----
-
 ### 2. Cloner le dépôt
 
 ```bash
 git clone https://github.com/<ton-repo>.git
 cd <ton-repo>
 ```
-
----
 
 ### 3. Compiler un exemple
 
@@ -72,8 +62,6 @@ pio run -d composants/heltec_wifi_lora_32_v3/code/LoRaSender
 ```
 
 > L’option `-d` indique à PlatformIO le dossier du projet à compiler.
-
----
 
 ### 4. Compiler et téléverser sur la carte
 
@@ -87,8 +75,6 @@ pio run -d composants/heltec_wifi_lora_32_v3/code/LoRaSender -t upload
 > upload_port = /dev/ttyUSB0
 > ```
 
----
-
 ### 5. Ouvrir le moniteur série
 
 Pour visualiser les messages envoyés par le programme :
@@ -96,8 +82,6 @@ Pour visualiser les messages envoyés par le programme :
 ```bash
 pio device monitor -d composants/heltec_wifi_lora_32_v3/code/LoRaSender
 ```
-
----
 
 ## 🧩 Astuce : tester tous les exemples d’un composant
 
@@ -107,16 +91,12 @@ Tu peux rapidement tester tous les exemples d’un même composant avec :
 for d in composants/heltec_wifi_lora_32_v3/code/*; do pio run -d "$d"; done
 ```
 
----
-
 ## 📘 En résumé
 
 | Méthode | Avantages | Inconvénients |
 |----------|------------|----------------|
 | **Arduino IDE** | Simple, visuel, idéal pour débuter | Gestion manuelle des bibliothèques |
 | **PlatformIO** | Automatisation, gestion des dépendances, intégration VS Code | Demande une première configuration |
-
----
 
 > 🧠 **Conseil :**  
 > Pour un usage régulier en Bac Pro ou BTS, **PlatformIO** est recommandé : il permet de versionner les projets, d’intégrer le code dans GitHub et de travailler plus efficacement en équipe.
