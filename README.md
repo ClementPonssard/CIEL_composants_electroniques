@@ -20,7 +20,6 @@ Le site est généré automatiquement avec **MkDocs Material**, à partir des tu
     - **Heltec WiFi LoRa 32 V3** — communication **LoRa / Meshtastic**  - [Tutoriel](https://clementponssard.github.io/CIEL_composants_electroniques/composants/heltec_wifi_lora_32_v3/)  - [Code source](https://github.com/ClementPonssard/CIEL_composants_electroniques/tree/main/composants/heltec_wifi_lora_32_v3/code)
 - 🌡️ Capteurs
     - **MPU6050** — *Unité de mesure inertielle (IMU 9 axes)* : 3 gyroscopes, 3 accéléromètres, 3 magnétomètres  - [Tutoriel](https://clementponssard.github.io/CIEL_composants_electroniques/composants/mpu6050/)  - [Code source](https://github.com/ClementPonssard/CIEL_composants_electroniques/tree/main/composants/mpu6050/code)
-
     - **DHT22** — *Capteur de température et d’humidité*  - [Tutoriel](https://clementponssard.github.io/CIEL_composants_electroniques/composants/dht22/)  - [Code source](https://github.com/ClementPonssard/CIEL_composants_electroniques/tree/main/composants/dht22/code)
 
 ## 🧰 Compiler les exemples
