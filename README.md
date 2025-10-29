@@ -1,4 +1,4 @@
-# 🔌 Catalogue de composants — CIEL  *(Arduino / ESP32 + PlatformIO)*
+# 🔌 Catalogue de composants — CIEL  *(Arduino / ESP32)*
 
 Bienvenue ! 👋  
 Ce site rassemble des **tutoriels** et **exemples de code Arduino / ESP32 (PlatformIO)** pour la mise en œuvre de composants électroniques classiques en **Bac Pro CIEL** et **BTS CIEL**.
