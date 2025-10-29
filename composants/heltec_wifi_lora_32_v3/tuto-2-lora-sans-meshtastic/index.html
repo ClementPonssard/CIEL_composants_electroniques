@@ -690,9 +690,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ressources-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Ressources utiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#etapes-principales" class="md-nav__link">
     <span class="md-ellipsis">
-      Étapes principales
+      🧩 Étapes principales
     </span>
   </a>
   
@@ -701,7 +710,16 @@
         <li class="md-nav__item">
   <a href="#verification-de-la-communication" class="md-nav__link">
     <span class="md-ellipsis">
-      Vérification de la communication
+      ✅ Vérification de la communication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-de-portee" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Test de portée
     </span>
   </a>
   
@@ -710,7 +728,25 @@
         <li class="md-nav__item">
   <a href="#pour-aller-plus-loin" class="md-nav__link">
     <span class="md-ellipsis">
-      Pour aller plus loin
+      🚀 Pour aller plus loin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depannage-erreurs-frequentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧰 Dépannage / erreurs fréquentes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compte-rendu-eleve" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 Compte rendu élève
     </span>
   </a>
   
@@ -1052,9 +1088,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ressources-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Ressources utiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#etapes-principales" class="md-nav__link">
     <span class="md-ellipsis">
-      Étapes principales
+      🧩 Étapes principales
     </span>
   </a>
   
@@ -1063,7 +1108,16 @@
         <li class="md-nav__item">
   <a href="#verification-de-la-communication" class="md-nav__link">
     <span class="md-ellipsis">
-      Vérification de la communication
+      ✅ Vérification de la communication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-de-portee" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Test de portée
     </span>
   </a>
   
@@ -1072,7 +1126,25 @@
         <li class="md-nav__item">
   <a href="#pour-aller-plus-loin" class="md-nav__link">
     <span class="md-ellipsis">
-      Pour aller plus loin
+      🚀 Pour aller plus loin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depannage-erreurs-frequentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧰 Dépannage / erreurs fréquentes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compte-rendu-eleve" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 Compte rendu élève
     </span>
   </a>
   
@@ -1099,45 +1171,101 @@
 
 <h1 id="tuto-2-communication-lora-point-a-point-sans-meshtastic">Tuto 2 — Communication LoRa point-à-point sans Meshtastic<a class="headerlink" href="#tuto-2-communication-lora-point-a-point-sans-meshtastic" title="Permanent link">&para;</a></h1>
 <h2 id="objectif-du-tp">🎯 Objectif du TP<a class="headerlink" href="#objectif-du-tp" title="Permanent link">&para;</a></h2>
-<p>Mettre en œuvre la communication <strong>LoRa</strong> entre deux modules Heltec WiFi LoRa 32 (V3) sans utiliser Meshtastic, en programmant directement sous PlatformIO ou l’IDE Arduino.</p>
+<p>Mettre en œuvre la communication <strong>LoRa</strong> entre deux modules Heltec WiFi LoRa 32 (V3) sans utiliser Meshtastic, en programmant directement la carte avec l’IDE Arduino ou sous PlatformIO.</p>
 <h2 id="competences-visees">🧠 Compétences visées<a class="headerlink" href="#competences-visees" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Programmer une carte <strong>ESP32 LoRa</strong></li>
 <li>Flasher et configurer des exemples de transmission</li>
-<li>Mesurer la qualité de réception radio (RSSI)</li>
+<li>Mesurer la qualité de réception radio (<strong>RSSI</strong>)</li>
 <li>Tester la portée et documenter les résultats</li>
 </ul>
 <h2 id="materiel-necessaire">🔧 Matériel nécessaire<a class="headerlink" href="#materiel-necessaire" title="Permanent link">&para;</a></h2>
 <ul>
-<li>2 modules Heltec WiFi LoRa 32 (V3)</li>
-<li>2 antennes 868 MHz</li>
-<li>2 câbles USB-C</li>
-<li>Un ordinateur avec PlatformIO ou Arduino IDE</li>
+<li>2 modules <strong>Heltec WiFi LoRa 32 (V3)</strong></li>
+<li>2 antennes <strong>868 MHz</strong></li>
+<li>2 câbles <strong>USB-C</strong></li>
+<li>1 ordinateur avec <strong>PlatformIO</strong> ou <strong>Arduino IDE</strong></li>
 </ul>
 <blockquote>
-<p>⚠️ <strong>Toujours connecter l’antenne hors tension.</strong></p>
+<p>⚠️ <strong>Toujours connecter l’antenne hors tension !</strong></p>
 </blockquote>
-<hr />
-<h2 id="etapes-principales">Étapes principales<a class="headerlink" href="#etapes-principales" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Installer la carte <strong>Heltec ESP32</strong> dans l’IDE Arduino  </li>
-<li>Installer la bibliothèque <strong>Heltec ESP32</strong> (+ dépendances : <em>Adafruit GFX</em>, etc.)  </li>
-<li>Ouvrir les exemples :  </li>
-<li><code>File → Examples → Heltec ESP32 Dev-Boards → LoRaBasic → LoRaSender</code></li>
-<li><code>File → Examples → Heltec ESP32 Dev-Boards → LoRaBasic → LoRaReceiver</code></li>
-<li>Sélectionner la carte <strong>Heltec WiFi LoRa 32 (V3)</strong> et la région <strong>EU868</strong></li>
-<li>Régler <code>TX_OUTPUT_POWER</code> selon besoin (max 20 dBm)</li>
-<li>Flasher l’émetteur et le récepteur</li>
-<li>Vérifier sur le moniteur série (115200 bauds)</li>
-</ol>
-<h2 id="verification-de-la-communication">Vérification de la communication<a class="headerlink" href="#verification-de-la-communication" title="Permanent link">&para;</a></h2>
+<h2 id="ressources-utiles">🔗 Ressources utiles<a class="headerlink" href="#ressources-utiles" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Le <strong>sender</strong> envoie périodiquement “Hello world”  </li>
-<li>Le <strong>receiver</strong> affiche les paquets reçus et le <strong>RSSI</strong>  </li>
-<li>Exemples :</li>
-<li><code>sending packet "Hello world number 0.01"</code>  </li>
-<li><code>received packet "Hello world number 0.59" with rssi -4</code></li>
+<li><strong>Guide vidéo :</strong> <a href="https://www.youtube.com/watch?v=7BlPcQgJay8">Communication LoRa sans Meshtastic</a>  </li>
+<li><strong>Documentation officielle :</strong> <a href="https://github.com/HelTecAutomation/Heltec_ESP32">https://github.com/HelTecAutomation/Heltec_ESP32</a>  </li>
+<li><strong>Calculateur LoRa Semtech :</strong> <a href="https://www.semtech.fr/design-support/lora-calculator">https://www.semtech.fr/design-support/lora-calculator</a>  </li>
+<li><strong>Activation de licence Heltec :</strong> <a href="https://docs.heltec.org/general/how_to_use_license.html">https://docs.heltec.org/general/how_to_use_license.html</a>  </li>
+<li><strong>Recherche de clé de licence :</strong> <a href="https://resource.heltec.cn/search">https://resource.heltec.cn/search</a></li>
 </ul>
+<h2 id="etapes-principales">🧩 Étapes principales<a class="headerlink" href="#etapes-principales" title="Permanent link">&para;</a></h2>
+<h3 id="1-installation-de-lenvironnement">1️⃣ Installation de l’environnement<a class="headerlink" href="#1-installation-de-lenvironnement" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ouvrir <strong>Arduino IDE</strong></li>
+<li>Si les cartes ESP32 ne sont pas disponibles :<ul>
+<li>Aller dans <strong>Fichier → Préférences</strong></li>
+<li>Ajouter l’URL suivante dans <em>Gestionnaire de cartes supplémentaires</em> :<br />
+    <div class="highlight"><pre><span></span><code>https://dl.espressif.com/dl/package_esp32_index.json
+</code></pre></div></li>
+<li>Puis installer la carte <strong>ESP32 by Espressif Systems</strong></li>
+</ul>
+</li>
+<li>Installer la <strong>librairie Heltec ESP32</strong> et ses dépendances :</li>
+</ol>
+<h3 id="2-configuration-de-lemetteur-lorasender">2️⃣ Configuration de l’émetteur (<em>LoRaSender</em>)<a class="headerlink" href="#2-configuration-de-lemetteur-lorasender" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Sélectionner la carte :<br />
+<strong>Tools → Board → Heltec WiFi LoRa 32 (V3)</strong></li>
+<li>Vérifier dans <strong>Tools → LoRaWan Region</strong> que la région est <strong>EU868</strong></li>
+<li>Ouvrir l’exemple :
+   <div class="highlight"><pre><span></span><code>File → Examples → Heltec ESP32 Dev-Boards → LoRaBasic → LoRaSender
+</code></pre></div></li>
+<li>Régler la puissance d’émission :
+   <div class="highlight"><pre><span></span><code><span class="n">TX_OUTPUT_POWER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w">  </span><span class="c1">// max 20 dBm</span>
+</code></pre></div><blockquote>
+<p>Pour ajuster les paramètres LoRa, utiliser le <strong>LoRa Calculator</strong> de Semtech.</p>
+</blockquote>
+</li>
+<li><strong>Compiler et flasher</strong> la carte.  </li>
+<li>Ouvrir le <strong>Moniteur Série</strong> à <strong>115200 bauds</strong>.<br />
+   Le module doit afficher :
+   <div class="highlight"><pre><span></span><code>sending packet &quot;Hello world number 0.01&quot;, length 23
+TX done...
+</code></pre></div></li>
+</ol>
+<h3 id="3-activation-de-la-licence-heltec-si-demandee">3️⃣ Activation de la licence Heltec (si demandée)<a class="headerlink" href="#3-activation-de-la-licence-heltec-si-demandee" title="Permanent link">&para;</a></h3>
+<p>Si le message suivant apparaît :
+<div class="highlight"><pre><span></span><code>Please provide a correct license! For more information:
+http://www.heltec.cn/search/
+ESP32ChipID=E422EB9E139C
+</code></pre></div></p>
+<p>➡️ Aller sur <a href="https://resource.heltec.cn/search">https://resource.heltec.cn/search</a><br />
+➡️ Entrer l’<strong>ESP32ChipID</strong> affiché<br />
+➡️ Copier la licence générée (sans les virgules ni “0x”)</p>
+<p>Dans le <strong>Moniteur Série</strong>, envoyer la commande (construite en supprimant les 0x,):
+<div class="highlight"><pre><span></span><code>AT+CDKEY=43444B71A80A6BD6A2B39242AF7D71F3
+</code></pre></div></p>
+<p>Si tout est correct, le message suivant apparaît :
+<div class="highlight"><pre><span></span><code>The board is actived
+</code></pre></div></p>
+<h3 id="4-configuration-du-recepteur-lorareceiver">4️⃣ Configuration du récepteur (<em>LoRaReceiver</em>)<a class="headerlink" href="#4-configuration-du-recepteur-lorareceiver" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ouvrir l’exemple :
+   <div class="highlight"><pre><span></span><code>File → Examples → Heltec ESP32 Dev-Boards → LoRaBasic → LoRaReceiver
+</code></pre></div></li>
+<li>Sélectionner la même carte et région (<strong>Heltec WiFi LoRa 32 (V3)</strong> / <strong>EU868</strong>)  </li>
+<li><strong>Flasher</strong> la carte réceptrice  </li>
+<li>Ouvrir le <strong>Moniteur Série (115200 bauds)</strong> pour observer les messages reçus.</li>
+</ol>
+<h2 id="verification-de-la-communication">✅ Vérification de la communication<a class="headerlink" href="#verification-de-la-communication" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Alimenter les deux modules (émetteur et récepteur)  </li>
+<li>Sur le moniteur du <strong>Receiver</strong>, on doit voir :
+   <div class="highlight"><pre><span></span><code>received packet &quot;Hello world number 0.59&quot; with rssi -4, length 23
+</code></pre></div></li>
+<li>Le <strong>RSSI</strong> indique la puissance du signal reçu :</li>
+<li>Plus la valeur est <strong>proche de 0</strong>, plus le signal est fort.</li>
+<li>
+<p>Exemple :</p>
 <table>
 <thead>
 <tr>
@@ -1164,13 +1292,166 @@
 </tr>
 </tbody>
 </table>
-<h2 id="pour-aller-plus-loin">Pour aller plus loin<a class="headerlink" href="#pour-aller-plus-loin" title="Permanent link">&para;</a></h2>
+</li>
+</ol>
+<h2 id="test-de-portee">📊 Test de portée<a class="headerlink" href="#test-de-portee" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Ajouter une batterie pour test en extérieur  </li>
-<li>Tester d’autres antennes et orientations  </li>
-<li>Utiliser l’écran OLED pour afficher les données  </li>
-<li>Explorer les paramètres LoRa (Bande, Spreading Factor, etc.)</li>
+<li>Déplacer les modules pour tester différentes distances et obstacles  </li>
+<li>Noter les <strong>valeurs de RSSI</strong> obtenues selon la distance et la configuration  </li>
+<li>Jouer sur :<ul>
+<li>La <strong>puissance d’émission</strong> (<code>TX_OUTPUT_POWER</code>, max 20 dBm)</li>
+<li>Le <strong>masquage des antennes</strong> (attention, elles sont fragiles)</li>
+<li>L’<strong>orientation</strong> des antennes</li>
 </ul>
+</li>
+</ul>
+<h2 id="pour-aller-plus-loin">🚀 Pour aller plus loin<a class="headerlink" href="#pour-aller-plus-loin" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Intégrer d’autres équipements LoRa (stations de réception, gateways, etc.)  </li>
+<li>Ajuster les paramètres LoRa : bande, <em>spreading factor</em>, débit, puissance  </li>
+<li>Sécuriser la communication (cryptage, filtrage d’adresses)  </li>
+<li>Utiliser les autres fonctions du module :<ul>
+<li><strong>Écran OLED</strong> pour afficher les données reçues</li>
+<li><strong>Batterie LiPo</strong> pour des tests en extérieur  </li>
+</ul>
+</li>
+</ul>
+<h2 id="depannage-erreurs-frequentes">🧰 Dépannage / erreurs fréquentes<a class="headerlink" href="#depannage-erreurs-frequentes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Cause probable</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carte non détectée</strong></td>
+<td>Drivers USB manquants</td>
+<td>Installer les <strong>drivers CP210X</strong></td>
+</tr>
+<tr>
+<td><strong>Erreur de compilation</strong></td>
+<td>Librairies manquantes</td>
+<td>Réinstaller la <strong>lib Heltec ESP32</strong> et <strong>Adafruit GFX</strong></td>
+</tr>
+<tr>
+<td><strong>Message “Please provide a correct license”</strong></td>
+<td>Licence non activée</td>
+<td>Récupérer la licence sur <a href="https://resource.heltec.cn/search">resource.heltec.cn</a> et l’envoyer via le Moniteur Série</td>
+</tr>
+<tr>
+<td><strong>Pas de message reçu</strong></td>
+<td>Mauvaise région ou fréquence</td>
+<td>Vérifier que les deux cartes sont en <strong>EU868</strong></td>
+</tr>
+<tr>
+<td><strong>RSSI très faible ou nul</strong></td>
+<td>Antenne mal fixée ou endommagée</td>
+<td>Vérifier le connecteur SMA et l’intégrité de l’antenne</td>
+</tr>
+<tr>
+<td><strong>Port COM non visible</strong></td>
+<td>Mauvais câble ou port USB défectueux</td>
+<td>Essayer un autre câble <strong>USB-C</strong> (avec données)</td>
+</tr>
+<tr>
+<td><strong>Communication instable</strong></td>
+<td>TX power trop faible ou interférences</td>
+<td>Augmenter <code>TX_OUTPUT_POWER</code>, éloigner des sources de bruit RF</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="compte-rendu-eleve">🧾 Compte rendu élève<a class="headerlink" href="#compte-rendu-eleve" title="Permanent link">&para;</a></h2>
+<h3 id="objectif-du-test">🔍 Objectif du test<a class="headerlink" href="#objectif-du-test" title="Permanent link">&para;</a></h3>
+<p>Déterminer la portée maximale et la qualité de communication LoRa entre deux modules Heltec WiFi LoRa 32 (V3).</p>
+<h3 id="tableau-de-mesures">📋 Tableau de mesures<a class="headerlink" href="#tableau-de-mesures" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Distance (m)</th>
+<th>Environnement</th>
+<th>Obstacles</th>
+<th>RSSI (dBm)</th>
+<th>Qualité du signal</th>
+<th>Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Intérieur</td>
+<td>Aucun</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Intérieur</td>
+<td>Cloison légère</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Intérieur</td>
+<td>2 cloisons</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Extérieur</td>
+<td>Libre</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>50</td>
+<td>Extérieur</td>
+<td>Libre</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>100</td>
+<td>Extérieur</td>
+<td>Libre</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Ajouter d'autres lignes si nécessaire.</p>
+</blockquote>
+<h3 id="analyse">📈 Analyse<a class="headerlink" href="#analyse" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Décrire l’évolution du <strong>RSSI</strong> en fonction de la distance.  </li>
+<li>Identifier les <strong>facteurs influençant</strong> la qualité du signal (distance, obstacles, orientation…).  </li>
+<li>Comparer les performances <strong>intérieur / extérieur</strong>.  </li>
+<li>Expliquer l’intérêt du protocole <strong>LoRa</strong> pour les communications longue portée à faible débit.</li>
+</ul>
+<h3 id="conclusion">🧩 Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Résumer les performances observées.  </li>
+<li>Proposer des pistes d’amélioration (antenne, puissance, paramètres LoRa, etc.).  </li>
+<li>Répondre à la question : <em>jusqu’où peut-on communiquer efficacement en LoRa avec ces modules ?</em></li>
+</ul>
+<p>📘 <strong>Astuce :</strong>
+Pour une meilleure portée, placer les modules en hauteur et éviter les obstacles métalliques.<br />
+En extérieur dégagé, une portée de <strong>plusieurs centaines de mètres</strong> est facilement atteignable.</p>
+<hr />
+<p><strong>Auteur :</strong> Clément Ponssard<br />
+<strong>Version :</strong> 1.1 — octobre 2025</p>
 
 
 
