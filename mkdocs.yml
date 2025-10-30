@@ -1,7 +1,7 @@
 site_name: Catalogue composants BP/BTS CIEL
 site_description: Tutos et exemples Arduino (PlatformIO) pour composants électroniques
 theme:
-  name: material
+  name: readthedocs
   features:
   - navigation.sections
   - content.code.copy
@@ -31,13 +31,13 @@ nav:
     - Tuto 2 — Communication LoRa point-à-point sans Meshtastic: composants/heltec_wifi_lora_32_v3/tuto-2-lora-sans-meshtastic.md
   - mpu6050:
     - Presentation: composants/mpu6050/index.md
-    - Références MPU6050: composants/mpu6050/references.md
-    - 'MPU6050 — Tuto 1 : prise en main': composants/mpu6050/tuto-1-debuter.md
-    - 'MPU6050 — Tuto 2 : approfondir': composants/mpu6050/tuto-2-approfondir.md
+    - Tuto 1: composants/mpu6050/tuto-1-debuter.md
+    - Tuto 2: composants/mpu6050/tuto-2-approfondir.md
 - Contribuer:
   - Comment Faire: contribuer/contribute.md
   - Mise en page: contribuer/MiseEnPage.md
-- Compiler les exemples: CompilerProjet.md
+- Compiler:
+  - Compiler les exemples: CompilerProjet.md
 markdown_extensions:
 - md_in_html
 - attr_list

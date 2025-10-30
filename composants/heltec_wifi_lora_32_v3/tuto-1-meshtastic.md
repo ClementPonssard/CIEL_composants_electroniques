@@ -15,7 +15,7 @@ Comprendre les bases du réseau maillé LoRa et échanger des messages entre nœ
 - 1 antenne **868 MHz**
 - 1 câble **USB-C**
 - 1 ordinateur (navigateur **Chrome** ou **Edge**)
-- (Optionnel) un second module pour tester le réseau maillé
+- 1 seconde module **Heltec WiFi LoRa 32 (V3)** ou autre noeud Meshtastic pour tester le réseau maillé
 
 > ⚠️ **Toujours connecter l’antenne hors tension !**
 
@@ -28,42 +28,52 @@ Comprendre les bases du réseau maillé LoRa et échanger des messages entre nœ
 
 1. **Connecter l’antenne** au module **hors tension**  
 2. **Brancher** le module via câble **USB-C**  
-3. Ouvrir le **Gestionnaire de périphériques** (Windows) → section **Ports (COM et LPT)**  
-   - Vérifier la présence de **Silicon Labs CP210X USB to UART Bridge**  
-   - Si absent → installer les **drivers CP210X** depuis le site Meshtastic  
-4. Ouvrir le **Web Flasher** : [https://flasher.meshtastic.org/](https://flasher.meshtastic.org/)  
-   - Sélectionner la carte **Heltec WiFi LoRa 32 (V3)**  
-   - Cliquer sur **Flash** pour installer le firmware  
-5. Une fois le flash terminé, redémarrer le module.  
+3. Ouvrir le **Gestionnaire de périphériques** (Windows) → section **Ports (COM et LPT)**
+      - Vérifier la présence de **Silicon Labs CP210X USB to UART Bridge**  
+      - Si absent → installer les **drivers CP210X** depuis le site Meshtastic  
+4. Ouvrir le **Web Flasher** sur *Chrome ou Edge*  : [https://flasher.meshtastic.org/](https://flasher.meshtastic.org/)
+      - Sélectionner la carte **Heltec WiFi LoRa 32 (V3)**  
+      - Selectionner le dernier micrologiciel en beta
+      - Cliquer sur **Flash** pour installer le firmware  
+      - Activer l'option **Effacement complet et installation**. 
+      - Si le module ne répond pas, voir l'astuce ci-dessous.
+5. Une fois le flash terminé, **redémarrer le module**.  
+
+📘 **Astuce :**  
+Si un module semble bloqué après un flash raté, maintenir le bouton **BOOT** enfoncé au branchement USB pour le relancer en mode récupération, puis reflasher via le Web Flasher.
 
 ## ⚙️ Configuration initiale
 
 1. Ouvrir le **client Meshtastic** :
-      - soit via le **Web Client** → [client.meshtastic.org](https://client.meshtastic.org)  
+      - soit via le **Web Client** sur *Chrome ou Edge* → [client.meshtastic.org](https://client.meshtastic.org)  
       - soit via l’application **Android/iOS**
 2. Choisir le mode de connexion :
+      - **USB/Série** :  
+        - Connecter directement le module à l’ordinateur  
       - **Bluetooth (BT)** :  
         - Demander le **jumelage**  
         - Entrer le **code affiché sur l’écran** du module  
-      - **USB/Série** :  
-        - Connecter directement le module à l’ordinateur  
-3. Dans le menu **Configuration → LoRa** :
+3. Dans le menu **Changer le nom de l'appareil**, modifier :
       - **Nom complet :** `CIEL HHMM` (ex : *CIEL 1425*)  
       - **Nom court :** `CIHH` (ex : *CI14*)  
+4. Dans le menu **Configuration → LoRa** :
       - **Région :** `EU_868`  
       - **MQTT :** *activé* (permet de transférer la position sur le réseau Meshtastic)  
       - **Sauvegarder les modifications**  
-4. Redémarrer le module et **reconnecter** le client si nécessaire.  
+5. Redémarrer le module et **reconnecter** le client si nécessaire.  
 
 ## ✅ Vérification du bon fonctionnement
 
-1. **Envoyer un message** sur le **canal principal**  
+1. **Débrancher et rebrancher** l'alimentationc du module
+2. Sur le client (Web, téléphone...), **attendre un peu** qu'un second noeud apparaisse dans "Noeuds"
+      - Si vous avez connecté deux modules dans la même pièce, ils devraient se découvrir très rapidement.
+3. **Envoyer un message** sur le **canal principal**  
       - Ce canal est **public et non chiffré**  
       - Le message sera **relayé** à tous les nœuds du réseau maillé  
-2. **Envoyer un message privé** à un autre nœud (ex : *de 01 vers 02*)  
+4. **Envoyer un message privé** à un autre nœud (ex : *de 01 vers 02*)  
       - Accessible uniquement par le destinataire  
-3. Si un nœud nommé **Prof** est visible, lui **envoyer un message privé**  
-4. Observer les échanges :
+5. Si un nœud nommé **Prof** est visible, lui **envoyer un message privé**  
+6. Observer les échanges :
       - Sur l’**écran OLED** du module  
       - Ou sur le **client Web / application mobile**
 
@@ -86,8 +96,7 @@ Comprendre les bases du réseau maillé LoRa et échanger des messages entre nœ
 | **Message MQTT non visible** | Option MQTT désactivée | Activer **MQTT** dans la configuration LoRa |
 | **Le module ne redémarre pas après flash** | Mauvaise carte sélectionnée | Reflasher en choisissant **Heltec WiFi LoRa 32 (V3)** |
 
-📘 **Astuce :**  
-Si un module semble bloqué après un flash raté, maintenir le bouton **BOOT** enfoncé au branchement USB pour le relancer en mode récupération, puis reflasher via le Web Flasher.
+
 
 
 **Auteur :** Clément Ponssard  

@@ -74,7 +74,7 @@ ESP32ChipID=E422EB9E139C
 ➡️ Entrer l’**ESP32ChipID** affiché  
 ➡️ Copier la licence générée (sans les virgules ni “0x”)
 
-Dans le **Moniteur Série**, envoyer la commande (construite en supprimant les 0x,):
+Dans le **Moniteur Série**, envoyer la commande :
 ```
 AT+CDKEY=43444B71A80A6BD6A2B39242AF7D71F3
 ```

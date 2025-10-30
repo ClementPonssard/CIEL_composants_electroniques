@@ -1,4 +1,5 @@
 # <Composant> — Tuto 1 : prise en main
+
 ## Objectifs
 - Lire une mesure et l'afficher sur le moniteur série
 
@@ -7,7 +8,7 @@
 - Breadboard, composants
 
 ## Schéma
-*(placer une image dans `assets/` et lier ici)*
+*(placer une image dans `images/` et lier ici)*
 
 ## Étapes
 1. Câbler le montage minimal
