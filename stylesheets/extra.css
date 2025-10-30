@@ -1,3 +1,8 @@
+/* Étend la zone de lecture */
+.wy-nav-content {
+  max-width: 1300px; /* Essaie 1100–1300px selon ton goût */
+}
+
 img.center {
   display: block;
   margin-left: auto;
